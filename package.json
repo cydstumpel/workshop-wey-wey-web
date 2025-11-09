@@ -1,0 +1,20 @@
+{
+  "name": "workshop-wey-wey-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "format": "prettier --write .",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "generate-pages": "node generate-html/generate-pages.js"
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "prettier": "^3.2.5"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

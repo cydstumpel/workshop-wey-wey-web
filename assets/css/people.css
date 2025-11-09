@@ -1,0 +1,38 @@
+.people {
+  display: grid;
+  grid-template-columns: var(--grid-columns);
+  gap: 3rem var(--grid-gap);
+  padding: 4rem var(--padding);
+
+  .people-intro {
+    grid-column: span 8;
+
+    p {
+      max-width: 50%;
+    }
+  }
+}
+
+.people-list {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: var(--grid-columns);
+  gap: var(--grid-gap);
+  padding: 0;
+  list-style-type: '';
+
+  @supports (grid-template-columns: subgrid) {
+    grid-template-columns: subgrid;
+  }
+}
+
+.large-title {
+  width: 100%;
+  overflow: hidden;
+  padding: 4rem var(--padding);
+
+  .huge-heading {
+    white-space: nowrap;
+  }
+}
+

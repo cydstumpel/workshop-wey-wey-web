@@ -1,0 +1,88 @@
+.person-item {
+  position: relative;
+  grid-column: span 3;
+  
+  display: flex;
+  flex-direction: column;
+  color: var(--background);
+  border-radius: var(--border-radius);
+  overflow: clip;
+  color: var(--color-light);
+
+  &:hover {
+    .person-item__image {
+      &::before {
+        opacity: 0;
+      }
+
+      img {
+        filter: grayscale(0%);
+        mix-blend-mode: unset;
+      }
+    }
+  }
+  a {
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+  }
+  .person-item__image {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: var(--background);
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: var(--color);
+      z-index: 1;
+      mix-blend-mode: multiply;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      height: 200px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 1;
+      background: linear-gradient(7deg,
+          rgba(10, 10, 10, 0.5) 0%,
+          rgba(10, 10, 10, 0) 70%);
+      mix-blend-mode: luminosity;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 30%;
+      mix-blend-mode: screen;
+      filter: grayscale(100%);
+      aspect-ratio: 3/4;
+      transition: filter 0.3s ease-in-out, mix-blend-mode 0.3s ease-in-out;
+    }
+  }
+
+  .person-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    padding: var(--padding);
+  }
+}

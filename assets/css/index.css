@@ -1,0 +1,148 @@
+@import './header.css';
+@import './typography.css';
+@import './person.css';
+
+@import './people.css';
+
+
+:root {
+	--background: #14041e;
+	--color-light: #fff;
+	--color: oklch(58.6% .253 17.585);
+	--padding: 1.5rem;
+	--padding-top: 2rem;
+	--bezier: cubic-bezier(0, 0.6, 0, 1);
+	--reverse-bezier: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+	--max-width: 1600px;
+	--grid-columns: repeat(12, 1fr);
+	--grid-gap: 1rem;
+	--border-radius: 0.5rem;
+}
+
+@media (max-width: 1024px) {
+	:root {
+		--grid-columns: repeat(6, 1fr);
+		--grid-gap: 0.75rem;
+	}
+}
+
+@media (max-width: 768px) {
+	:root {
+		--padding: 1rem;
+	}
+}
+
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+
+body {
+	background-color: var(--background);
+	color: var(--color);
+
+}
+
+[style*="--vt"] {
+	view-transition-name: var(--vt);
+}
+
+.person-media,
+.person-item__image {
+	view-transition-class: person-media;
+}
+
+.person-info {
+	view-transition-class: person-info;
+}
+
+::view-transition {
+	animation-fill-mode: both;
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+	animation-duration: 0.4s;
+}
+
+::view-transition-group(.person-media) {
+	animation-duration: 0.6s;
+	border-radius: var(--border-radius);
+	overflow: clip;
+}
+
+::view-transition-old(.person-media),
+::view-transition-new(.person-media) {
+	height: 100%;
+	object-fit: cover;
+	overflow: clip;
+	object-position: center 30%;
+}
+
+::view-transition-old(.person-media) {
+	animation-name: none;
+}
+
+::view-transition-new(.person-media) {
+	animation-name: none;
+}
+
+
+::view-transition-old(.person-media):only-child {
+	animation-name: animate-out;
+	animation-duration: 0.4s;
+	animation-delay: 0s;
+}
+
+::view-transition-new(.person-media):only-child {
+	animation-name: animate-in;
+	animation-duration: 0.4s;
+}
+
+::view-transition-group(.person-info) {
+	z-index: 1;
+}
+
+::view-transition-old(.person-info),
+::view-transition-new(.person-info) {
+	animation-duration: 0.2s;
+}
+
+:active-view-transition-type(home-to-people-detail) {
+	&::view-transition-old(.person-media) {
+		opacity: 0;
+	}
+}
+
+:active-view-transition-type(people-detail-to-home) {
+	&::view-transition-new(.person-media) {
+		opacity: 0;
+		animation-delay: 0s;
+	}
+	&::view-transition-new(.person-media):only-child,
+	&::view-transition-new(.person-info) {
+		animation-delay: 0.6s;
+	}
+	
+}
+
+@keyframes animate-out {
+	from {
+		opacity: 1;
+	}
+	
+	to {
+		opacity: 0;
+	}
+}
+
+@keyframes animate-in {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}

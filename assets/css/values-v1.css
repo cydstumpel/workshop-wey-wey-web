@@ -1,0 +1,22 @@
+.values {
+  display: grid;
+  grid-template-columns: var(--grid-columns);
+  gap: 3rem var(--grid-gap);
+  padding: 4rem var(--padding);
+
+  .values-intro {
+    grid-column: span 4;
+  }
+
+  .values__list {
+    grid-column: 6 / span 6;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .values-value {
+    border: 1px solid var(--color);
+    padding: var(--padding);
+    border-radius: var(--border-radius);
+  }
+}

@@ -1,0 +1,87 @@
+
+body {
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.mono {
+	font-family: "ABCDiatypeMono-Regular-Trial", monospace;
+	letter-spacing: 0.02em;
+}
+
+.serif {
+	font-family: "TRJNDaVinci-Regular-Trial", serif;
+	letter-spacing: -0.02em;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-variation-settings: "wght" 400;
+}
+
+.huge-heading {
+	font-size: max(8rem, calc(250/1440 * 100vw));
+	line-height: 1;
+	letter-spacing: -0.06em;
+}
+
+.xlarge-heading {
+	font-size: max(3rem, calc(150/1440 * 100vw));
+	line-height: 1.35;
+	letter-spacing: -0.04em;
+}
+.large-heading {
+	font-size: max(2.5rem, calc(52/1440 * 100vw));
+	line-height: 1.2;
+	letter-spacing: -0.04em;
+}
+
+.medium-heading {
+	font-size: max(1.5rem, calc(32/1440 * 100vw));
+	line-height: 1.2;
+	letter-spacing: -0.04em;
+}
+
+
+.large-body {
+	font-size: max(1.25rem, calc(20/1440 * 100vw));
+	line-height: 1.4;
+
+}
+.default-body, .label {
+	font-size: max(0.875rem, calc(14/1440 * 100vw));
+	line-height: 1.25;
+}
+
+
+.p {
+	.huge-heading,
+	.large-heading,
+	.medium-heading {
+		& + * {
+			margin-top: 1em;
+		}
+		& + [class*="-heading"] {
+			margin-top: 0.5em;
+		}
+	}
+	
+	.large-body,
+	.default-body {
+		& + * {
+			margin-top: 0.5em;
+		}
+		& + [class*="-body"] {
+			margin-top: 1em;
+		}
+	}
+}
+
+svg {
+	fill: currentColor;
+}
+
+a {
+	color: inherit;
+}
+
+.font-bold {
+	font-variation-settings: "wght" 600;
+}

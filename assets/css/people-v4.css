@@ -1,0 +1,64 @@
+.people-list {
+  display: flex;
+  justify-content: center;
+}
+
+.person-item {
+  color: var(--color-light);
+  --random-rotation: 1deg;
+  position: absolute;
+  z-index: 1;
+  gap: 0;
+  width: 30vh;
+  transform: rotate(var(--random-rotation));
+  
+  &:first-child {
+    position: relative;
+  }
+  a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    text-decoration: none;
+  }
+  .person-item__image {
+    box-shadow: -4px 4px 0 0 var(--color);
+    border-radius: var(--border-radius);
+    &::after {
+      content: "";
+      position: absolute;
+      height: 200px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 1;
+      background: linear-gradient(7deg,
+      rgba(10, 10, 10, 0.5) 0%,
+      rgba(10, 10, 10, 0) 70%);
+      mix-blend-mode: luminosity;
+      border-radius: var(--border-radius);
+    }
+    
+    img {
+      display: block;
+      aspect-ratio: 3/4;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 30%;
+      border-radius: var(--border-radius);
+    }
+  }
+
+  .person-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    padding: var(--padding);
+  }
+}

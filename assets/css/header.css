@@ -1,0 +1,7 @@
+.header {
+  padding: var(--padding);
+  img {
+    height: 2rem;
+    width: auto;
+  }
+}

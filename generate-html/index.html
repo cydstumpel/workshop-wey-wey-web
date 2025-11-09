@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wey Wey Web</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="stylesheet" href="./assets/css/index.css">
+</head>
+
+<body class="theme--purple v1">
+  <style>
+    @view-transition {
+      navigation: auto;
+    }
+  </style>
+  <header class="header">
+    <a href="/">
+      <svg width="98" height="21" viewBox="0 0 98 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10.6818 16.9999H-5.72205e-06V1H3.22259V14.2693H10.6818V16.9999Z" />
+        <path
+          d="M16.7492 17.4427C15.552 17.4427 14.486 17.1885 13.5512 16.6801C12.6328 16.1717 11.9112 15.4337 11.3864 14.4661C10.878 13.4985 10.6238 12.3341 10.6238 10.9729C10.6238 9.72648 10.878 8.61948 11.3864 7.65188C11.9112 6.68428 12.6328 5.93808 13.5512 5.41328C14.4696 4.87208 15.5028 4.60148 16.6508 4.60148C18.4712 4.60148 19.8898 5.18368 20.9066 6.34808C21.9234 7.51248 22.4318 9.08688 22.4318 11.0713V11.7355H13.6988C13.7152 12.7031 14.0022 13.5067 14.5598 14.1463C15.1174 14.7695 15.8472 15.0811 16.7492 15.0811C17.4216 15.0811 17.9874 14.9089 18.4466 14.5645C18.9222 14.2037 19.2092 13.7117 19.3076 13.0885H22.358C22.276 13.9085 21.989 14.6547 21.497 15.3271C21.0214 15.9831 20.3736 16.4997 19.5536 16.8769C18.7336 17.2541 17.7988 17.4427 16.7492 17.4427ZM19.3568 9.57068C19.324 8.75068 19.0616 8.09468 18.5696 7.60268C18.0776 7.09428 17.4298 6.84008 16.6262 6.84008C15.8226 6.84008 15.1502 7.09428 14.609 7.60268C14.0678 8.11108 13.7562 8.76708 13.6742 9.57068H19.3568Z" />
+        <path
+          d="M27.0796 17.4427C26.3744 17.4427 25.702 17.2951 25.0624 16.9999C24.4228 16.6883 23.9062 16.2537 23.5126 15.6961C23.1354 15.1221 22.9468 14.4579 22.9468 13.7035C22.9468 12.4407 23.3568 11.5141 24.1768 10.9237C25.0132 10.3169 26.1612 9.91508 27.6208 9.71828L29.3428 9.49688C29.8184 9.43128 30.1546 9.31648 30.3514 9.15248C30.5646 8.97208 30.6712 8.72608 30.6712 8.41448C30.6712 7.97168 30.4908 7.60268 30.13 7.30748C29.7856 6.99588 29.31 6.84008 28.7032 6.84008C28.0144 6.84008 27.4568 7.02048 27.0304 7.38128C26.604 7.74208 26.358 8.24228 26.2924 8.88188H23.1928C23.2912 7.60268 23.8242 6.56948 24.7918 5.78228C25.7594 4.99508 27.0058 4.60148 28.531 4.60148C30.3186 4.60148 31.6224 5.06068 32.4424 5.97908C33.2624 6.88108 33.6724 8.20128 33.6724 9.93968V16.9999H30.8926V16.5079C30.8926 16.1799 30.9336 15.7945 31.0156 15.3517C30.6712 15.9913 30.171 16.4997 29.515 16.8769C28.8754 17.2541 28.0636 17.4427 27.0796 17.4427ZM27.8914 15.2287C28.695 15.2287 29.3756 14.9581 29.9332 14.4169C30.4908 13.8757 30.7696 13.1869 30.7696 12.3505V11.0467C30.5236 11.2763 30.048 11.4485 29.3428 11.5633L28.3588 11.7601C27.6044 11.8913 27.0222 12.1045 26.6122 12.3997C26.2022 12.6785 25.9972 13.0721 25.9972 13.5805C25.9972 14.0889 26.1776 14.4907 26.5384 14.7859C26.8992 15.0811 27.3502 15.2287 27.8914 15.2287Z" />
+        <path
+          d="M34.7065 21V5H37.7077V5.53628C37.7077 5.88068 37.6749 6.27428 37.6093 6.71708C38.4457 5.30668 39.7577 4.60148 41.5453 4.60148C42.5949 4.60148 43.5133 4.88028 44.3005 5.43788C45.1041 5.97908 45.7191 6.74168 46.1455 7.72568C46.5883 8.69328 46.8097 9.80848 46.8097 11.0713C46.8097 12.3341 46.5719 13.4493 46.0963 14.4169C45.6371 15.3845 44.9975 16.1307 44.1775 16.6555C43.3575 17.1803 42.4391 17.4427 41.4223 17.4427C40.4711 17.4427 39.7003 17.2623 39.1099 16.9015C38.5359 16.5407 38.0357 16.0241 37.6093 15.3517C37.6749 15.7945 37.7077 16.1799 37.7077 16.5079V21H34.7065ZM40.6843 15.0811C41.6027 15.0811 42.3407 14.7121 42.8983 13.9741C43.4723 13.2197 43.7593 12.2357 43.7593 11.0221C43.7593 9.82488 43.4805 8.85728 42.9229 8.11928C42.3817 7.36488 41.6355 6.98768 40.6843 6.98768C39.7659 6.98768 39.0197 7.35668 38.4457 8.09468C37.8717 8.81628 37.5847 9.79208 37.5847 11.0221C37.5847 12.2193 37.8717 13.1951 38.4457 13.9495C39.0197 14.7039 39.7659 15.0811 40.6843 15.0811Z" />
+        <path
+          d="M48.6244 16.9999L48.6237 7.39998H46.4375V4.99996H48.6237L48.624 2.9996C48.6242 1.3429 49.9673 0 51.624 0H54.1341V2.4H51.6256L51.6249 4.99996H54.1341V7.39998H51.6249L51.6256 16.9999H48.6244Z" />
+        <path
+          d="M59.9163 17.4427C58.7191 17.4427 57.6531 17.1885 56.7183 16.6801C55.7835 16.1553 55.0537 15.4173 54.5289 14.4661C54.0205 13.4985 53.7663 12.3587 53.7663 11.0467C53.7663 9.75106 54.0287 8.61947 54.5535 7.65187C55.0783 6.68427 55.7999 5.93807 56.7183 5.41327C57.6531 4.87207 58.7191 4.60147 59.9163 4.60147C61.1135 4.60147 62.1795 4.86387 63.1143 5.38867C64.0491 5.91347 64.7789 6.66787 65.3037 7.65187C65.8285 8.61947 66.0909 9.75106 66.0909 11.0467C66.0909 12.3587 65.8285 13.4985 65.3037 14.4661C64.7789 15.4173 64.0491 16.1553 63.1143 16.6801C62.1795 17.1885 61.1135 17.4427 59.9163 17.4427ZM59.9163 15.0811C60.8675 15.0811 61.6219 14.7285 62.1795 14.0233C62.7535 13.3017 63.0405 12.3095 63.0405 11.0467C63.0405 9.76746 62.7535 8.77526 62.1795 8.07007C61.6055 7.34846 60.8511 6.98767 59.9163 6.98767C58.9815 6.98767 58.2271 7.34846 57.6531 8.07007C57.0955 8.77526 56.8167 9.76746 56.8167 11.0467C56.8167 12.3095 57.0955 13.3017 57.6531 14.0233C58.2107 14.7285 58.9651 15.0811 59.9163 15.0811Z" />
+        <path
+          d="M66.7847 16.9999V4.99507H69.7859V5.90527C69.7859 6.34807 69.7531 6.76627 69.6875 7.15987C70.4911 5.45427 71.6637 4.60147 73.2053 4.60147C73.4349 4.60147 73.6481 4.62607 73.8449 4.67527V7.57807C73.5825 7.51247 73.2955 7.47967 72.9839 7.47967C71.9999 7.47967 71.2209 7.76666 70.6469 8.34066C70.0729 8.89826 69.7859 9.80026 69.7859 11.0467V16.9999H66.7847Z" />
+        <path
+          d="M79.5926 17.4427C77.6902 17.4427 76.1978 16.8687 75.1154 15.7207C74.0494 14.5727 73.5164 12.9983 73.5164 10.9975C73.5164 9.70187 73.787 8.57027 74.3282 7.60267C74.8694 6.63507 75.6156 5.89707 76.5668 5.38867C77.518 4.86387 78.5758 4.60147 79.7402 4.60147C81.4294 4.60147 82.7578 5.05247 83.7254 5.95447C84.7094 6.85647 85.2752 8.04546 85.4228 9.52146H82.3724C82.3232 8.79986 82.069 8.20127 81.6098 7.72567C81.167 7.23367 80.5438 6.98767 79.7402 6.98767C78.8218 6.98767 78.0592 7.34846 77.4524 8.07007C76.862 8.77526 76.5668 9.75926 76.5668 11.0221C76.5668 12.2193 76.8538 13.1951 77.4278 13.9495C78.0018 14.7039 78.748 15.0811 79.6664 15.0811C80.5192 15.0811 81.1834 14.8351 81.659 14.3431C82.1346 13.8347 82.4134 13.1951 82.4954 12.4243H85.5458C85.3326 13.9987 84.7176 15.2287 83.7008 16.1143C82.7004 16.9999 81.331 17.4427 79.5926 17.4427Z" />
+        <path
+          d="M91.891 17.4427C90.6938 17.4427 89.6278 17.1885 88.693 16.6801C87.7746 16.1717 87.053 15.4337 86.5282 14.4661C86.0198 13.4985 85.7656 12.3341 85.7656 10.9729C85.7656 9.72647 86.0198 8.61947 86.5282 7.65187C87.053 6.68427 87.7746 5.93807 88.693 5.41327C89.6114 4.87207 90.6446 4.60147 91.7926 4.60147C93.613 4.60147 95.0316 5.18367 96.0484 6.34807C97.0652 7.51247 97.5736 9.08686 97.5736 11.0713V11.7355H88.8406C88.857 12.7031 89.144 13.5067 89.7016 14.1463C90.2592 14.7695 90.989 15.0811 91.891 15.0811C92.5634 15.0811 93.1292 14.9089 93.5884 14.5645C94.064 14.2037 94.351 13.7117 94.4494 13.0885H97.4998C97.4178 13.9085 97.1308 14.6547 96.6388 15.3271C96.1632 15.9831 95.5154 16.4997 94.6954 16.8769C93.8754 17.2541 92.9406 17.4427 91.891 17.4427ZM94.4986 9.57066C94.4658 8.75066 94.2034 8.09467 93.7114 7.60267C93.2194 7.09427 92.5716 6.84007 91.768 6.84007C90.9644 6.84007 90.292 7.09427 89.7508 7.60267C89.2096 8.11107 88.898 8.76706 88.816 9.57066H94.4986Z" />
+      </svg>
+    </a>
+  </header>
+  <section class="people">
+    <div class="people-intro p">
+      <h1 class="huge-heading">Leapforce</h1>
+      <p class="large-body">Een buitengewoon team zorgt voor buitengewone resultaten.</p>
+    </div>
+    
+  <ul class="people-list">
+  
+    <li class="person-item" style="--random-rotation: -2.1574208254773253deg;">
+      <div class="person-item__image" style="--vt: advait-sarkar;">
+        <img src="undefined" alt="Advait Sarkar" loading="eager" class="person-image" width="1600" height="2400">
+      </div>
+      <a href="./people/advait-sarkar">
+        <div class="person-info" style="--vt: advait-sarkar-info;">
+          <h3 class="person-name large-body">
+          Advait Sarkar
+          </h3>
+          <p class="person-title default-body">Affiliated Lecturer at University of Cambridge</p>
+        </div>
+      </a>
+    </li>
+    
+    <li class="person-item" style="--random-rotation: -1.1729952029790058deg;">
+      <div class="person-item__image" style="--vt: shelley-vohr;">
+        <img src="undefined" alt="Shelley Vohr" loading="eager" class="person-image" width="1600" height="2400">
+      </div>
+      <a href="./people/shelley-vohr">
+        <div class="person-info" style="--vt: shelley-vohr-info;">
+          <h3 class="person-name large-body">
+          Shelley Vohr
+          </h3>
+          <p class="person-title default-body">Principal Engineer at Microsoft</p>
+        </div>
+      </a>
+    </li>
+    
+    <li class="person-item" style="--random-rotation: 3.5411750693115707deg;">
+      <div class="person-item__image" style="--vt: cyd-stumpel;">
+        <img src="undefined" alt="Cyd Stumpel" loading="eager" class="person-image" width="1600" height="2400">
+      </div>
+      <a href="./people/cyd-stumpel">
+        <div class="person-info" style="--vt: cyd-stumpel-info;">
+          <h3 class="person-name large-body">
+          Cyd Stumpel
+          </h3>
+          <p class="person-title default-body">Freelance Creative Developer</p>
+        </div>
+      </a>
+    </li>
+    
+    <li class="person-item" style="--random-rotation: -4.77305681181295deg;">
+      <div class="person-item__image" style="--vt: candi-williams;">
+        <img src="undefined" alt="Candi Williams" loading="eager" class="person-image" width="1600" height="2400">
+      </div>
+      <a href="./people/candi-williams">
+        <div class="person-info" style="--vt: candi-williams-info;">
+          <h3 class="person-name large-body">
+          Candi Williams
+          </h3>
+          <p class="person-title default-body">UX Content Design Director</p>
+        </div>
+      </a>
+    </li>
+    
+    <li class="person-item" style="--random-rotation: -3.9729562162664944deg;">
+      <div class="person-item__image" style="--vt: piccia-neri;">
+        <img src="undefined" alt="Piccia Neri" loading="eager" class="person-image" width="1600" height="2400">
+      </div>
+      <a href="./people/piccia-neri">
+        <div class="person-info" style="--vt: piccia-neri-info;">
+          <h3 class="person-name large-body">
+          Piccia Neri
+          </h3>
+          <p class="person-title default-body">Accessible Design Trainer & Consultant</p>
+        </div>
+      </a>
+    </li>
+    
+    <li class="person-item" style="--random-rotation: -3.576845843720573deg;">
+      <div class="person-item__image" style="--vt: alessandra-canella;">
+        <img src="undefined" alt="Alessandra Canella" loading="eager" class="person-image" width="1600" height="2400">
+      </div>
+      <a href="./people/alessandra-canella">
+        <div class="person-info" style="--vt: alessandra-canella-info;">
+          <h3 class="person-name large-body">
+          Alessandra Canella
+          </h3>
+          <p class="person-title default-body">Design Leader & Mentor</p>
+        </div>
+      </a>
+    </li>
+    
+    <li class="person-item" style="--random-rotation: 4.209553999384729deg;">
+      <div class="person-item__image" style="--vt: steve-upton;">
+        <img src="undefined" alt="Steve Upton" loading="eager" class="person-image" width="1600" height="2400">
+      </div>
+      <a href="./people/steve-upton">
+        <div class="person-info" style="--vt: steve-upton-info;">
+          <h3 class="person-name large-body">
+          Steve Upton
+          </h3>
+          <p class="person-title default-body">Principal Consultant at Thoughtworks</p>
+        </div>
+      </a>
+    </li>
+    
+    <li class="person-item" style="--random-rotation: -1.0324768245371718deg;">
+      <div class="person-item__image" style="--vt: luke-hay;">
+        <img src="undefined" alt="Luke Hay" loading="eager" class="person-image" width="1600" height="2400">
+      </div>
+      <a href="./people/luke-hay">
+        <div class="person-info" style="--vt: luke-hay-info;">
+          <h3 class="person-name large-body">
+          Luke Hay
+          </h3>
+          <p class="person-title default-body">Senior User Researcher at Clearleft</p>
+        </div>
+      </a>
+    </li>
+    
+    <li class="person-item" style="--random-rotation: -0.4214358544345327deg;">
+      <div class="person-item__image" style="--vt: soumaya-erradi;">
+        <img src="undefined" alt="Soumaya Erradi" loading="eager" class="person-image" width="1600" height="2400">
+      </div>
+      <a href="./people/soumaya-erradi">
+        <div class="person-info" style="--vt: soumaya-erradi-info;">
+          <h3 class="person-name large-body">
+          Soumaya Erradi
+          </h3>
+          <p class="person-title default-body">Senior Software Developer @ Atlantis</p>
+        </div>
+      </a>
+    </li>
+    
+    <li class="person-item" style="--random-rotation: -0.5645616298077876deg;">
+      <div class="person-item__image" style="--vt: orcdev;">
+        <img src="undefined" alt="Orcdev" loading="eager" class="person-image" width="1600" height="2400">
+      </div>
+      <a href="./people/orcdev">
+        <div class="person-info" style="--vt: orcdev-info;">
+          <h3 class="person-name large-body">
+          Orcdev
+          </h3>
+          <p class="person-title default-body">Software Engineer</p>
+        </div>
+      </a>
+    </li>
+    
+    <li class="person-item" style="--random-rotation: -1.0084946333383238deg;">
+      <div class="person-item__image" style="--vt: raff-di-meo;">
+        <img src="undefined" alt="Raff Di Meo" loading="eager" class="person-image" width="1600" height="2400">
+      </div>
+      <a href="./people/raff-di-meo">
+        <div class="person-info" style="--vt: raff-di-meo-info;">
+          <h3 class="person-name large-body">
+          Raff Di Meo
+          </h3>
+          <p class="person-title default-body">Senior Principal UX Designer at Blue Yonder</p>
+        </div>
+      </a>
+    </li>
+    
+    <li class="person-item" style="--random-rotation: -0.9474963689561982deg;">
+      <div class="person-item__image" style="--vt: guillaume-vaslin;">
+        <img src="undefined" alt="Guillaume Vaslin" loading="eager" class="person-image" width="1600" height="2400">
+      </div>
+      <a href="./people/guillaume-vaslin">
+        <div class="person-info" style="--vt: guillaume-vaslin-info;">
+          <h3 class="person-name large-body">
+          Guillaume Vaslin
+          </h3>
+          <p class="person-title default-body">Founder & Head of Design at ENNOstudio</p>
+        </div>
+      </a>
+    </li>
+    
+    <li class="person-item" style="--random-rotation: -0.8598978425229031deg;">
+      <div class="person-item__image" style="--vt: ignacio-chicharro;">
+        <img src="undefined" alt="Ignacio Chicharro" loading="eager" class="person-image" width="1600" height="2400">
+      </div>
+      <a href="./people/ignacio-chicharro">
+        <div class="person-info" style="--vt: ignacio-chicharro-info;">
+          <h3 class="person-name large-body">
+          Ignacio Chicharro
+          </h3>
+          <p class="person-title default-body">Development Technical Lead at Medida</p>
+        </div>
+      </a>
+    </li>
+    
+    <li class="person-item" style="--random-rotation: -1.328054292778258deg;">
+      <div class="person-item__image" style="--vt: xenia-melikhova;">
+        <img src="undefined" alt="Xenia Melikhova" loading="eager" class="person-image" width="1600" height="2400">
+      </div>
+      <a href="./people/xenia-melikhova">
+        <div class="person-info" style="--vt: xenia-melikhova-info;">
+          <h3 class="person-name large-body">
+          Xenia Melikhova
+          </h3>
+          <p class="person-title default-body">Frontend developer at TradingView</p>
+        </div>
+      </a>
+    </li>
+    
+    <li class="person-item" style="--random-rotation: -1.1339016770191401deg;">
+      <div class="person-item__image" style="--vt: jenil-gogari;">
+        <img src="undefined" alt="Jenil Gogari" loading="eager" class="person-image" width="1600" height="2400">
+      </div>
+      <a href="./people/jenil-gogari">
+        <div class="person-info" style="--vt: jenil-gogari-info;">
+          <h3 class="person-name large-body">
+          Jenil Gogari
+          </h3>
+          <p class="person-title default-body">Senior Product Designer at Datadog</p>
+        </div>
+      </a>
+    </li>
+    
+    <li class="person-item" style="--random-rotation: -2.494921102879988deg;">
+      <div class="person-item__image" style="--vt: dima-malyshenko;">
+        <img src="undefined" alt="Dima Malyshenko" loading="eager" class="person-image" width="1600" height="2400">
+      </div>
+      <a href="./people/dima-malyshenko">
+        <div class="person-info" style="--vt: dima-malyshenko-info;">
+          <h3 class="person-name large-body">
+          Dima Malyshenko
+          </h3>
+          <p class="person-title default-body">Tech Entrepreneur, CTO, and Software Engineer</p>
+        </div>
+      </a>
+    </li>
+    
+    <li class="person-item" style="--random-rotation: -4.729428122723407deg;">
+      <div class="person-item__image" style="--vt: tamas-kokeny;">
+        <img src="undefined" alt="Tamas Kokeny" loading="eager" class="person-image" width="1600" height="2400">
+      </div>
+      <a href="./people/tamas-kokeny">
+        <div class="person-info" style="--vt: tamas-kokeny-info;">
+          <h3 class="person-name large-body">
+          Tamas Kokeny
+          </h3>
+          <p class="person-title default-body">Educator at Productkind</p>
+        </div>
+      </a>
+    </li>
+    
+    <li class="person-item" style="--random-rotation: -4.060782944887691deg;">
+      <div class="person-item__image" style="--vt: kinga-magyar;">
+        <img src="undefined" alt="Kinga Magyar" loading="eager" class="person-image" width="1600" height="2400">
+      </div>
+      <a href="./people/kinga-magyar">
+        <div class="person-info" style="--vt: kinga-magyar-info;">
+          <h3 class="person-name large-body">
+          Kinga Magyar
+          </h3>
+          <p class="person-title default-body">Product Builder & Coach at Productkind</p>
+        </div>
+      </a>
+    </li>
+    
+    <li class="person-item" style="--random-rotation: 2.8501997425591803deg;">
+      <div class="person-item__image" style="--vt: salma-alam-naylor;">
+        <img src="undefined" alt="Salma Alam-Naylor" loading="eager" class="person-image" width="1600" height="2400">
+      </div>
+      <a href="./people/salma-alam-naylor">
+        <div class="person-info" style="--vt: salma-alam-naylor-info;">
+          <h3 class="person-name large-body">
+          Salma Alam-Naylor
+          </h3>
+          <p class="person-title default-body">Head of Developer Education at Nordcraft</p>
+        </div>
+      </a>
+    </li>
+    
+    <li class="person-item" style="--random-rotation: -0.3580133329978663deg;">
+      <div class="person-item__image" style="--vt: andreas-moller;">
+        <img src="undefined" alt="Andreas Møller" loading="eager" class="person-image" width="1600" height="2400">
+      </div>
+      <a href="./people/andreas-moller">
+        <div class="person-info" style="--vt: andreas-moller-info;">
+          <h3 class="person-name large-body">
+          Andreas Møller
+          </h3>
+          <p class="person-title default-body">CEO and Co-Founder of Nordcraft</p>
+        </div>
+      </a>
+    </li>
+    
+  </ul>
+
+  </section>
+  <section class="large-title">
+    <p class="huge-heading">Een buitengewoon team zorgt voor buitengewone resultaten.</p>
+  </section>
+  <section class="values">
+    <div class="values-intro">
+      <p class="label">
+        Waarden
+      </p>
+      <h2 class="large-heading">
+        Onze kernwaarden zijn de basis van alles wat we doen
+      </h2>
+    </div>
+    <div class="values-value p">
+      <h3 class="medium-heading">
+        Toeval bestaat niet
+      </h3>
+      <p class="large-body">
+        Alles volgt een plan. We houden controle in de chaos en
+        regisseren 10.000 dingen met één doel: controle over je ROl tot op de euro. Zo kom je als bedrijf écht verder.
+      </p>
+    </div>
+    <div class="values-value p">
+      <h3 class="medium-heading">
+        Duidelijkheid rendeert
+      </h3>
+      <p class="large-body">
+        Uitgesproken zijn werkt. We zeggen wat nodig is om écht
+        resultaat te boeken. Tegen klanten en tegen elkaar. Altijd duidelijk, direct en met een gezonde dosis
+        empathie.
+      </p>
+    </div>
+    <div class="values-value p">
+      <h3 class="medium-heading">
+        Mens met machine
+      </h3>
+      <p class="large-body">
+        Techniek is niets zonder de mens. En andersom. Ze versterken
+        elkaar. Zijn samen een versnellende factor voor succes. Techniek is ons gereedschap, mensen zijn onze focus.
+      </p>
+    </div>
+    <div class="values-value p">
+      <h3 class="medium-heading">
+        Goed, beter, buitengewoon
+      </h3>
+      <p class="large-body">
+        Middelmatig is geen optie. We verleggen grenzen en zoeken
+        nieuwsgierig naar wat er beter kan. Experimenteren is aan de
+        orde van de dag, maar we blijven bij de les.
+      </p>
+    </div>
+  </section>
+  <script src="./assets/js/index.js" type="module"></script>
+</body>
+
+</html>
